@@ -21,7 +21,6 @@ export default function Register() {
   const [alertText, setAlertText] = useState("");
   const [alertVisible] = useState(new Animated.Value(0));
 
-  // Funksioni që shfaq mesazhin nalt për disa sekonda
   const showAlert = (text) => {
     setAlertText(text);
     Animated.timing(alertVisible, {
@@ -39,7 +38,7 @@ export default function Register() {
     });
   };
 
-  // Kontrolli i fjalëkalimit
+ 
   const validatePassword = (pw) => {
     const missing = [];
     if (pw.length < 8) missing.push("• Të paktën 8 karaktere");
@@ -84,7 +83,7 @@ export default function Register() {
 
   return (
     <View style={styles.container}>
-      {/* Banner alert nalt */}
+     
       <Animated.View
         style={[
           styles.alertBox,
