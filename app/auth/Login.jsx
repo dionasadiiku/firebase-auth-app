@@ -40,7 +40,7 @@ export default function Login() {
       await signInWithEmailAndPassword(auth, email, password);
       showAlert("Success", "Login successful!");
       console.log(" Login successful with email:", email);
-      router.push("/Home"); // përdor push që të shfaqet shigjeta back
+      router.push("/Home"); 
     } catch (error) {
       console.error(" Login error:", error);
       showAlert("Error", error.message);
