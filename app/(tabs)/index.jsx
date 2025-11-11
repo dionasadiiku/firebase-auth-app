@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from '../auth/Login'; // emri i file yt Login.jsx
+import Login from '../auth/Login'; 
 
 export default function Index() {
   return <Login />;
